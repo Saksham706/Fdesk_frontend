@@ -1,0 +1,59 @@
+.tds3-wrapper {
+  background: #f5f7fa;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tds3-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tds3-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1d2c4e;
+  margin-bottom: 30px;
+}
+
+.tds3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tds3-card {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.97rem;
+  color: #333;
+  text-align: left;
+}
+
+.tds3-icon {
+  color: #2cd4b8;
+  margin-right: 8px;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .tds3-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tds3-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tds3-title {
+    font-size: 1.5rem;
+  }
+
+  .tds3-card {
+    font-size: 0.95rem;
+  }
+}

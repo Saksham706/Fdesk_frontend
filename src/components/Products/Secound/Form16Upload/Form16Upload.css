@@ -1,0 +1,84 @@
+body {
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.form16-page-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.form16-upload-form {
+  /* Card styling */
+  width: 100%;
+  max-width: 950px;      /* Or another max width as you prefer */
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(32,56,117,0.06);
+}
+
+fieldset {
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  padding: 18px 18px 12px 18px;
+  background: #fff;
+}
+
+legend {
+  padding: 0 12px;
+  font-size: 1.15em;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.input-row input {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f1f5fa;
+  transition: border-color 0.3s;
+}
+.input-row input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+fieldset input:not(.input-row input) {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: #f1f5fa;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 960px) {
+  .form16-upload-form {
+    max-width: 98vw;
+    padding: 16px 8px 16px 8px;
+  }
+  fieldset {
+    padding: 12px 8px 10px 8px;
+  }
+  .input-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

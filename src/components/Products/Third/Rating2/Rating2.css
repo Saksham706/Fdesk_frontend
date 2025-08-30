@@ -1,0 +1,36 @@
+.rating2-wrapper {
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.rating2-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.rating-box {
+  flex: 1 1 200px;
+  margin: 15px;
+  padding: 20px;
+  max-width: 220px;
+}
+
+.rating-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.rating-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0a3364;
+}
+
+.rating-label {
+  font-size: 14px;
+  color: #333;
+}

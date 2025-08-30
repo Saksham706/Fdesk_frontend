@@ -1,0 +1,120 @@
+/* Section: Who Needs to File */
+.nri-section {
+  background-color: #f5f7fa;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.nri-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.nri-desc {
+  font-size: 23px;
+  color: #2e2e2e;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.nri-desc span {
+  font-style: italic;
+}
+
+/* Section: Services */
+.nri-tax-services {
+  padding: 30px 15px;
+  text-align: center;
+  background: white;
+}
+
+.nri-tax-services h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.nri-services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.nri-services-left {
+  flex: 1;
+  min-width: 260px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.nri-service-item {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #1d1d1f;
+  line-height: 1.4;
+}
+
+.check-icon {
+  margin-right: 8px;
+  color: #00a66f;
+}
+
+.nri-services-right {
+  flex: 1;
+  min-width: 240px;
+  text-align: center;
+}
+
+.nri-growth-img {
+  max-width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nri-title {
+    font-size: 18px;
+  }
+
+  .nri-desc {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .nri-tax-services h2 {
+    font-size: 18px;
+  }
+
+  .nri-service-item {
+    font-size: 12px;
+  }
+
+  .nri-services-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nri-services-left,
+  .nri-services-right {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .nri-service-item {
+    justify-content: center;
+    text-align: center;
+  }
+}

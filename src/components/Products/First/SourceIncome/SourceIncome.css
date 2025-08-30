@@ -1,0 +1,97 @@
+.source-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  text-align: center;
+}
+
+.source-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c1d1f;
+}
+
+.source-subtitle {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #555;
+}
+
+.eligibility-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.eligibility-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.eligibility-box p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  width: 270px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f9fafa;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  background-color: #eef3f5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.card .icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #3a7bd5;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.note {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .source-title {
+    font-size: 22px;
+  }
+
+  .eligibility-box {
+    padding: 20px;
+  }
+
+  .card .icon {
+    font-size: 26px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}

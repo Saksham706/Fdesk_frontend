@@ -1,0 +1,120 @@
+.hra-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.hra-left {
+  width: 45%;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hra-left h2 {
+  margin-bottom: 15px;
+}
+
+.hra-left ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.hra-right {
+  width: 50%;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.city-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.city-toggle label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.city-toggle input {
+  margin-right: 5px;
+}
+
+.small-text {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+.hra-right input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hra-right button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hra-result {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .hra-container {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  .hra-left,
+  .hra-right {
+    width: 100%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+  }
+
+  .hra-left {
+    margin-bottom: 20px;
+  }
+
+  .city-toggle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .city-toggle label {
+    font-size: 14px;
+  }
+
+  .small-text {
+    font-size: 11px;
+  }
+
+  .hra-right button {
+    font-size: 14px;
+  }
+
+  .hra-right input {
+    font-size: 14px;
+  }
+
+  .hra-result {
+    font-size: 16px;
+  }
+}

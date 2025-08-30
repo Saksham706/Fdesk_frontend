@@ -1,0 +1,167 @@
+/* Container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+/* Left: Form Section */
+.contact-form-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  min-width: 300px;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #36c85f;
+  box-shadow: 0 0 5px rgba(54, 200, 95, 0.4);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.error {
+  color: #e63946;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #36c85f, #2ea74e);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #2ea74e, #36c85f);
+  transform: translateY(-2px);
+}
+
+/* Right: Info Section */
+.contact-info-section {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(135deg, #36c85f, #2ea74e);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.contact-info-section h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-info-section p {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form-section,
+  .contact-info-section {
+    flex: unset;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .contact-form-section {
+    padding: 25px 20px;
+  }
+
+  .contact-info-section {
+    padding: 25px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-info-section p {
+    justify-content: center;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h3 {
+    font-size: 18px;
+  }
+}

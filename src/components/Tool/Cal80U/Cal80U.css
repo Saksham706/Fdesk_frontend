@@ -1,0 +1,88 @@
+.cal80u-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.cal80u-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.cal80u-card:hover {
+  transform: translateY(-2px);
+}
+
+.cal80u-card h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  display: block;
+  margin-bottom: 6px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fafafa;
+  transition: border 0.2s ease;
+}
+
+select:focus {
+  border-color: #0077ff;
+  background-color: #fff;
+}
+
+.deduction-display {
+  display: flex;
+  justify-content: space-between;
+  background: #f0f9f4;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.deduction-value {
+  color: #0a9e3f;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cal80u-card {
+    padding: 20px;
+  }
+
+  .cal80u-card h1 {
+    font-size: 22px;
+  }
+}

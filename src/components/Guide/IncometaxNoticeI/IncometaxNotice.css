@@ -1,0 +1,83 @@
+.notices-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.notice-card {
+  background-color: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.notice-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  background-color: #28a745;;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.read-more:hover {
+  background-color: white;
+}
+
+.reasons-section {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.reasons-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reasons-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.reasons-section li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}

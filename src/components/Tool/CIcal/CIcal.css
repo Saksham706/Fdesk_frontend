@@ -1,0 +1,115 @@
+.ci-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.calculator-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.input-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-section label {
+  font-weight: 600;
+}
+
+.input-section input[type="number"],
+.input-section select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-section input[type="range"] {
+  width: 100%;
+}
+
+.circle-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 150px;
+  margin-top: 20px;
+}
+
+.results {
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .calculator-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .circle-section {
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+    width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ci-container {
+    padding: 15px 10px;
+  }
+  .input-section input[type="number"],
+  .input-section select {
+    font-size: 13px;
+    padding: 7px;
+  }
+  .input-section label {
+    font-size: 14px;
+  }
+  .results {
+    font-size: 14px;
+  }
+  .circle-section {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  .circle-section {
+    width: 110px;
+    height: 110px;
+  }
+  .input-section {
+    gap: 12px;
+  }
+  .input-section label {
+    font-size: 13px;
+  }
+  .input-section input[type="number"],
+  .input-section select {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .results {
+    font-size: 13px;
+  }
+}

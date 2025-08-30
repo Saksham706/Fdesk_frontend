@@ -1,0 +1,138 @@
+.nri-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5fcf9;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 20px;
+}
+
+.nri-left {
+  flex: 1;
+  min-width: 280px;
+  padding-right: 20px;
+}
+
+.nri-left h2 {
+  font-size: 50px;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.nri-left .subtitle {
+  font-size: 20px;
+  color: #00a47e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.nri-left .desc {
+  font-size: 19px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.nri-left span {
+  color: #058e4e;
+  font-weight: 600;
+}
+
+.nri-highlights p {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.nri-form-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.nri-form-container h3 {
+  font-size: 16px;
+  color: #0f172a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.nri-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.nri-form-container input,
+.nri-form-container textarea {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+}
+
+.nri-form-container textarea {
+  height: 60px;
+}
+
+.nri-form-container button {
+  background-color: #058e4e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nri-form-container button:hover {
+  background-color: #046b3c;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.message.success {
+  color: green;
+  background-color: #eaffea;
+}
+
+.message.error {
+  color: red;
+  background-color: #ffeaea;
+}
+
+.message.duplicate {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nri-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nri-form-container {
+    width: 88%;
+    max-width: 100%;
+  }
+
+  .nri-left {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,170 @@
+.calculator80c-main {
+  display: flex;
+  gap: 36px;
+  padding: 36px 12px;
+  margin: 0 auto;
+  max-width: 1160px;
+  align-items: flex-start;
+  background: #fafafc;
+}
+
+.calculator80c-formbox {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px 26px 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  flex: 2;
+  min-width: 520px;
+}
+
+.calc80c-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.calc80c-select {
+  flex: 1;
+  padding: 12px 10px;
+  border-radius: 7px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+.calc80c-inputgrp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc80c-inputgrp label {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #444;
+}
+
+.calc80c-inputbox {
+  position: relative;
+}
+
+.calc80c-currency {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4CAF50;
+  z-index: 1;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.calc80c-inputbox input {
+  width: 100%;
+  padding: 10px 10px 10px 28px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+.calc80c-inputbox-small {
+  max-width: 180px;
+}
+
+.calc80c-btnrow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.add-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.remove-btn {
+  background: #f44336;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.calc80c-results {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.calc80c-resultbox {
+  flex: 1;
+  background: #eaffea;
+  border-radius: 7px;
+  padding: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.calc80c-resultbox h3 {
+  color: #3cb371;
+  margin: 9px 0 0;
+}
+
+.calc80c-adbox {
+  flex: 1;
+  min-width: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tax-service-ad {
+  background: #e5f3ff;
+  border-radius: 10px;
+  padding: 28px 18px 22px;
+  min-width: 270px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,43,85,0.09);
+}
+
+.tax-service-head {
+  color: #e95a22;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.tax-service-sub {
+  font-size: 18px;
+  color: #21334f;
+  margin-bottom: 22px;
+}
+
+.tax-service-btn {
+  background: #09b067;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 22px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .calculator80c-main {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .calc80c-adbox {
+    margin: 24px 0 0 0;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,35 @@
+.form16-summary-container {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 20px 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f8fa;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form16-summary-title {
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+  color: #334155;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 6px;
+}
+
+.form16-summary-employer,
+.form16-summary-employee,
+.form16-summary-period,
+.form16-summary-taxregime {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.form16-summary-employer strong,
+.form16-summary-employee strong,
+.form16-summary-period strong,
+.form16-summary-taxregime strong {
+  color: #1e40af;
+}

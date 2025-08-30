@@ -1,0 +1,92 @@
+/* TaxConsultancy1.css */
+
+.tax-section {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 40px 24px;
+  background: #e9f5ee;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(44, 62, 80, 0.07);
+  min-height: 60vh;
+}
+
+.tax-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #184d32;
+}
+
+.tax-title-highlight {
+  color: #2fb36c;
+}
+
+.tax-subtitle {
+  font-size: 1.15rem;
+  color: #426a5a;
+  text-align: center;
+  margin-bottom: 34px;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+.tax-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 36px;
+  justify-items: center;
+}
+
+.tax-service-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(30, 43, 58, 0.10);
+  padding: 32px 20px 28px 20px;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.18s;
+  border: 1px solid #e1e7ed;
+  cursor: pointer;
+}
+
+.tax-service-card:hover {
+  box-shadow: 0 8px 24px rgba(47, 179, 108, 0.14);
+  transform: translateY(-4px) scale(1.03);
+  border-color: #a1e9c8;
+}
+
+.tax-service-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #25354a;
+  margin-bottom: 10px;
+}
+
+.tax-service-card-desc {
+  font-size: 1rem;
+  color: #637587;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 950px) {
+  .tax-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .tax-section {
+    padding: 20px 5px;
+  }
+  .tax-service-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .tax-service-card {
+    max-width: 100%;
+    padding: 24px 10px 18px 10px;
+  }
+}

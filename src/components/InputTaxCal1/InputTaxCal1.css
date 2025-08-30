@@ -1,0 +1,123 @@
+.gst-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 80px;
+  background-color: #f2fbff;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gst-left {
+  max-width: 600px;
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.gst-left h1 {
+  font-size: 36px;
+  color: #16325c;
+  margin-bottom: 10px;
+}
+
+.gst-left h2 {
+  font-size: 20px;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.gst-icons {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gst-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gst-form-card {
+  background-color: #ffffff;
+  padding: 16px; 
+  border-radius: 10px;
+  width: 220px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gst-form-card h3 {
+  text-align: center;
+  margin-bottom: 10px; 
+  color: #000;
+  font-weight: 600;
+  font-size: 14px; 
+}
+
+.gst-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; 
+}
+
+.gst-form input,
+.gst-form textarea {
+  width: 100%; 
+  padding: 6px 8px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+
+.gst-form input:focus,
+.gst-form textarea:focus {
+  border-color: #2e7d32;
+}
+
+.gst-form textarea {
+  resize: none;
+  height: 50px;
+}
+
+.gst-form button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.gst-form button:hover {
+  background-color: #27682b;
+}
+
+
+
+@media (max-width: 768px) {
+  .gst-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .gst-form-card {
+    margin-top: 30px;
+  }
+}

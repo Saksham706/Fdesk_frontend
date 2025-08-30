@@ -1,0 +1,160 @@
+.capitalgain-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 20px;
+  background-color: #f0f9f4;
+  font-family: Arial, sans-serif;
+}
+
+.capitalgain-left {
+  width: 100%;
+  text-align: center;
+}
+
+.capitalgain-left h2 {
+  font-size: 20px;
+  color: #1b2e4b;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.capitalgain-left h1 {
+  font-size: 24px;
+  color: #1b2e4b;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.capitalgain-left p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.highlight,
+.green {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.capitalgain-form {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.capitalgain-form h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #1b2e4b;
+}
+
+.capitalgain-form input,
+.capitalgain-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.capitalgain-form textarea {
+  resize: none;
+}
+
+.capitalgain-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.capitalgain-form button:hover {
+  background-color: #218838;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e6ffe6;
+  color: #1a7f3c;
+}
+
+.message.error {
+  background-color: #ffe6e6;
+  color: #c62828;
+}
+
+.message.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  .capitalgain-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+  }
+
+  .capitalgain-left {
+    width: 55%;
+    text-align: left;
+  }
+
+  .capitalgain-form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .capitalgain-left h1 {
+    font-size: 32px;
+  }
+
+  .capitalgain-left h2 {
+    font-size: 24px;
+  }
+
+  .capitalgain-left p {
+    font-size: 16px;
+  }
+
+  .stats {
+    justify-content: flex-start;
+  }
+}

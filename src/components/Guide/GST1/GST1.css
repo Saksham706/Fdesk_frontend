@@ -1,0 +1,191 @@
+.gst-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 80px;
+  background-color: #f2fbff;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.gst-left {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gst-left h1 {
+  font-size: 36px;
+  color: #16325c;
+  margin-bottom: 10px;
+}
+
+.gst-left h2 {
+  font-size: 20px;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.gst-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gst-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gst-form-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gst-form-card h3 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.gst-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gst-form input,
+.gst-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.gst-form input:focus,
+.gst-form textarea:focus {
+  border-color: #2e7d32;
+}
+
+.gst-form textarea {
+  resize: none;
+  height: 70px;
+}
+
+.gst-form button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.gst-form button:hover {
+  background-color: #27682b;
+}
+
+.success,
+.error {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1024px) {
+  .gst-section {
+    padding: 40px 40px;
+    gap: 30px;
+  }
+
+  .gst-left h1 {
+    font-size: 28px;
+  }
+
+  .gst-left h2 {
+    font-size: 18px;
+  }
+
+  .gst-form-card {
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gst-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .gst-left {
+    text-align: center;
+  }
+
+  .gst-left h1 {
+    font-size: 24px;
+  }
+
+  .gst-left h2 {
+    font-size: 16px;
+  }
+
+  .gst-form-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gst-left h1 {
+    font-size: 20px;
+  }
+
+  .gst-left h2 {
+    font-size: 15px;
+  }
+
+  .gst-form input,
+  .gst-form textarea,
+  .gst-form button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .gst-icon {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}

@@ -1,0 +1,57 @@
+.penalties-container {
+  background-color: #fff;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.penalties-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d2c4e;
+  margin-bottom: 10px;
+}
+
+.penalties-description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.penalties-table {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header {
+  background-color: #198754;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.table-row {
+  display: flex;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  padding: 12px;
+}
+
+.table-col {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .penalties-table, .table-header, .table-row {
+    flex-direction: column;
+  }
+
+  .table-col {
+    padding: 5px 0;
+  }
+}

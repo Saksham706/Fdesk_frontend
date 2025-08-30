@@ -1,0 +1,52 @@
+.form16-container {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9faff;
+  border: 1px solid #dfe3e8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  color: #2c3e50;
+}
+
+.section-title {
+  margin-bottom: 14px;
+  font-size: 1.3rem;
+  color: #34495e;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 6px;
+}
+
+.salary-list,
+.deductions-list,
+.tds-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.salary-item,
+.deduction-item,
+.tds-item {
+  background-color: #ffffff;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border: 1px solid #d1d9e6;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.salary-item:last-child,
+.deduction-item:last-child,
+.tds-item:last-child {
+  margin-bottom: 0;
+}
+
+.amount {
+  font-weight: 700;
+  color: #2980b9;
+}

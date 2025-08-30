@@ -1,0 +1,145 @@
+/* Page Headings */
+h2 {
+  font-size: 24px;
+  color: #052c65;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.prepaid-wrapper {
+  max-width: 850px;
+   margin: 40px auto;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.section-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.section-card h4 {
+  margin-bottom: 10px;
+  color: #007219;
+}
+
+input, select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  width: 98%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.action-btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.action-btns button {
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #052c65;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.action-btns button:hover {
+  background: #04346d;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.toggle-group.right {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-group.right button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #052c65;
+  background-color: white;
+  color: #052c65;
+  cursor: pointer;
+}
+
+.toggle-group.right button.active {
+  background-color: #052c65;
+  color: white;
+}
+
+.toggle-group.right button:hover {
+  background-color: #01418e;
+  color: white;
+}
+
+.ca-button,
+.continue-button,
+.back-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ca-button {
+  background-color: #052c65;
+  color: #fff;
+}
+
+.ca-button:hover {
+  background-color: #031c3a;
+}
+
+.continue-button {
+  background-color: #198754;
+  color: #fff;
+}
+
+.continue-button:hover {
+  background-color: #146c43;
+}

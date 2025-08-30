@@ -1,0 +1,54 @@
+.ca-filling-container {
+  padding: 50px 20px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ca-filling-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.ca-filling-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  justify-items: center;
+}
+
+.ca-filling-card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.ca-filling-icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #16a34a;
+}
+
+.ca-filling-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.ca-filling-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .ca-filling-grid {
+    grid-template-columns: 1fr;
+  }
+}

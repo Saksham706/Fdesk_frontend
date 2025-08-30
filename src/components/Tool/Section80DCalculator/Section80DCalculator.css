@@ -1,0 +1,175 @@
+.FdeskSolutions-container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Form centering & width */
+.FdeskSolutions-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(120,120,120,0.12);
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 36px 30px 30px 30px;
+}
+
+.FdeskSolutions-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 26px;
+  letter-spacing: -1.5px;
+}
+
+.FdeskSolutions-warning {
+  background: #f8dddd;
+  color: #d12c2c;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.08rem;
+}
+
+.FdeskSolutions-warning-icon {
+  display: inline-block;
+  font-weight: bold;
+  background: #d12c2c;
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 23px;
+  font-size: 1.2rem;
+}
+
+.FdeskSolutions-row,
+.FdeskSolutions-row-inline {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FdeskSolutions-row label,
+.FdeskSolutions-row-inline label {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.FdeskSolutions-row select,
+.FdeskSolutions-row input {
+  padding: 7px 10px;
+  font-size: 1.02rem;
+  border: 2px solid #ececec;
+  border-radius: 6px;
+  margin-left: 12px;
+  min-width: 170px;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.FdeskSolutions-row-inline span input[type="radio"] {
+  margin-left: 7px;
+  margin-right: 4px;
+}
+
+.FdeskSolutions-row-inline span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px; 
+}
+
+
+.FdeskSolutions-group {
+  margin-bottom: 10px;
+}
+
+.FdeskSolutions-subtitle {
+  font-size: 15px;
+  color: #3cbc2b;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+  display: block;
+}
+
+.FdeskSolutions-tooltip {
+  background: #efb667;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 14px;
+  cursor: default;
+}
+
+.FdeskSolutions-total label,
+.FdeskSolutions-total span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.FdeskSolutions-grandtotal {
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.FdeskSolutions-deduction,
+.FdeskSolutions-grand-deduction {
+  color: #449f09;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left:12px;
+}
+
+.FdeskSolutions-grand-deduction {
+  font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .FdeskSolutions-form {
+    max-width: 98vw;
+    border-radius: 9px;
+    padding: 18px 7vw 18px 7vw;
+  }
+  .FdeskSolutions-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .FdeskSolutions-form {
+    max-width: 100vw;
+    border-radius: 7px;
+    box-shadow: none;
+    padding: 13px 2vw 16px 2vw;
+    margin-top: 17px;
+  }
+  .FdeskSolutions-row,
+  .FdeskSolutions-row-inline {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+  .FdeskSolutions-row label,
+  .FdeskSolutions-row-inline label {
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+  .FdeskSolutions-row select,
+  .FdeskSolutions-row input {
+    width: 96vw;
+    min-width: 0;
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .FdeskSolutions-group {
+    margin-bottom: 16px;
+  }
+}

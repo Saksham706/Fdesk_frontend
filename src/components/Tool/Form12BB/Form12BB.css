@@ -1,0 +1,119 @@
+.form12bb-container {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form12bb-header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.form12bb-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.form12bb-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.form12bb-steps {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1;
+  min-width: 150px;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step-card.active {
+  background: #003366;
+  color: white;
+}
+
+.step-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.form-card {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.full-width {
+  grid-column: span 3;
+}
+
+.form-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.next {
+  background: #003366;
+  color: white;
+}
+
+.btn.back {
+  background: #ccc;
+}
+
+.btn.submit {
+  background: green;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

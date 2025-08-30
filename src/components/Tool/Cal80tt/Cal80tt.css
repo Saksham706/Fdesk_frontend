@@ -1,0 +1,115 @@
+/* Container */
+.cal80tta-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-icon {
+  font-size: 50px;
+  color: #4ade80;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* Card Styling */
+.form-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  width: 700px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+select,
+input[type='number'] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+  background-color: white;
+}
+
+select:focus,
+input:focus {
+  border-color: #4ade80;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.4);
+}
+
+/* Button */
+.calc-btn {
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.calc-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.4);
+}
+
+/* Result Box */
+.result {
+  margin-top: 25px;
+  font-size: 17px;
+  color: #065f46;
+  background-color: #ecfdf5;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 6px solid #10b981;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .calc-btn {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,31 @@
+.rating-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f6f9fc;
+}
+
+.rating-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 240px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.rating-icon {
+  font-size: 28px;
+  color: #00b96b;
+  margin-bottom: 10px;
+}
+
+.rating-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f1f1f;
+  margin: 0;
+}

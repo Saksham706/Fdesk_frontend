@@ -1,0 +1,184 @@
+.crypto-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.crypto-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.crypto-container p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.drop-down {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Entry rows and input fields */
+.entry-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.entry-row input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.button-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.add,
+.remove {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #28a745;
+  color: white;
+}
+
+.remove {
+  background-color: #f44336;
+  color: white;
+}
+
+.calculate {
+  padding: 0.7rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  flex: 1 1 220px;
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.result-card p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.result-card h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: green;
+  word-break: break-word;
+}
+
+.result-card h2.loss {
+  color: #f44336;
+}
+
+.note {
+  margin-top: 1.5rem;
+  background-color: #e3f2fd;
+  color: #333;
+  border: 1px solid #90caf9;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* ---------- RESPONSIVE DESIGN ----------- */
+@media (max-width: 900px) {
+  .crypto-container {
+    padding: 1rem;
+  }
+  .results { 
+    gap: 1rem; 
+  }
+}
+
+@media (max-width: 700px) {
+  .crypto-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .entry-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .results {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .result-card {
+    width: 100%;
+    flex: none;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .calculate {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .crypto-container {
+    padding: 0.5rem;
+  }
+  .crypto-container h1 {
+    font-size: 1.1rem;
+  }
+  .drop-down, .entry-row input, .add, .remove, .calculate {
+    font-size: 0.95rem;
+  }
+  .note {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+  .result-card h2 {
+    font-size: 1.25rem;
+  }
+}
