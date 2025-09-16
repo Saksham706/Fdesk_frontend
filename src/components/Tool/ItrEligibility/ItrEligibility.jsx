@@ -73,7 +73,7 @@ const ItrEligibility = () => {
 
         {/* Submit */}
         <div className="form-submit">
-          <button type="submit">Calculate Tax</button>
+          <button className='butom' type="submit">Calculate Tax</button>
         </div>
       </form>
     </div>

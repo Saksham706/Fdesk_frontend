@@ -39,7 +39,7 @@ input {
   text-align: center;
 }
 
-button {
+.butom {
   background: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -48,7 +48,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.butom:hover {
   background: #0056b3;
 }
 
@@ -94,7 +94,7 @@ button:hover {
     padding: 15px;
     font-size: 13px;
   }
-  input, button {
+  input, .butom {
     font-size: 14px;
     padding: 8px;
   }

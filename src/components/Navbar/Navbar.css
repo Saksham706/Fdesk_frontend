@@ -234,64 +234,134 @@
 @media (max-width: 1024px) {
   .navbar {
     flex-wrap: wrap;
-    padding: 12px 16px;
-    justify-content: space-between; /* revert for mobile */
+    padding: 0;
+    gap: 0;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+  }
+
+  .mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.36);
+    z-index: 9999;
+    transition: opacity 0.3s;
+  }
+  .mobile-menu-overlay.open {
+    display: block;
   }
 
   .mobile-menu-icon {
     display: block !important;
-    z-index: 10000;
+    position: fixed; /* Keep it visible over overlay */
+    right: 22px;
+    top: 18px;
+    z-index: 12001;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 28px !important;
+    color: #111 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.11);
+    padding: 3px 12px;
   }
 
   .navbar-links {
     flex-direction: column;
-    width: 100%;
-    display: none;
-    margin-top: 10px;
-    gap: 0;
-    background-color: white;
-    border-top: 1px solid #eee;
-    padding: 10px 0;
+    align-items: stretch;
+    width: 92vw;
+    max-width: 340px;
+    min-width: 240px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 32px 0 32px 0;
+    background: #fff;
+    box-shadow: -5px 0 40px rgba(0,0,0,0.15);
+    z-index: 12000;
+    display: flex;
+    transform: translateX(100%);
+    transition: transform 0.33s cubic-bezier(.4,.8,.32,1.01);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .navbar-links.open {
+    transform: translateX(0%);
+    display: flex;
+  }
+
+  /* Show logo inside mobile drawer */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 28px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    color: #222;
+    font-weight: 700;
+  }
+
+  /* Move logo into navbar-links for mobile */
+  .navbar > .navbar-logo {
+    display: none;
+  }
+  .navbar-links .navbar-logo {
     display: flex;
   }
 
   .navbar-links > li {
     width: 100%;
-    padding: 12px;
+    padding: 18px 32px 12px 32px;
+    font-size: 1.12rem;
     border-bottom: 1px solid #f0f0f0;
+    background: transparent;
   }
 
+  /* Dropdowns inside mobile drawer */
   .dropdown-menu,
   .dropdown-menu.tools-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    min-width: 100%;
+    position: static;
     box-shadow: none;
     border: none;
+    background: #f9f9f9;
     border-radius: 0;
+    margin: 4px 0 8px 0;
+    padding: 8px 0;
+    font-size: 0.96em;
+    display: none;
   }
-
+  .dropdown.active .dropdown-menu,
+  .dropdown.active .dropdown-menu.tools-menu {
+    display: block;
+  }
   .tools-columns {
     flex-direction: column;
+    gap: 0.75rem;
+    padding: 0 10px;
   }
-
   .tools-column {
     width: 100%;
+    padding: 0;
   }
-
   .profile-dropdown {
-    right: auto;
-    left: 0;
+    position: static;
+    width: 100%;
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 8px 0 0 0;
+    padding: 6px 22px;
   }
-
   .navbar-profile {
-    margin-top: 12px;
+    width: 100%;
+    margin-top: 14px;
+    padding: 0 32px;
   }
 }
+
 
 /* Fade-in Animation */
 @keyframes fadeIn {
