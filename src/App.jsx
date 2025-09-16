@@ -69,11 +69,12 @@ import Section80Dcal from './pages/Tools/Section80Dcal/Section80Dcal';
 
 function App() {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/';
+    const noNavbarFooterRoutes = ['/', '/signup'];
+  const hideNavbarFooter = noNavbarFooterRoutes.includes(location.pathname);
 
   return (
     <>
-      {!isLoginPage && <Navbar />}
+      {!hideNavbarFooter && <Navbar />}
       <div className="app">
         <Routes>
           <Route path='/' element={<Login />} />
@@ -135,7 +136,7 @@ function App() {
           <Route path='/80d-calculator' element={<Section80Dcal/>}/>
         </Routes>
       </div>
-      {!isLoginPage && <Footer />}
+      {!hideNavbarFooter && <Footer />}
     </>
   );
 }
