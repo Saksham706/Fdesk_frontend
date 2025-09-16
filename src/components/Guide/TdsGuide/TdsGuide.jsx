@@ -1,5 +1,5 @@
 import React from 'react';
-import './TDSGuide.css';
+import './TdsGuide.css';
 
 const tdsData = [
   {
