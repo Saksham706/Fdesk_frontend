@@ -51,10 +51,10 @@
   color: #333;
 }
 
-.capitalgain-form {
+.capitalgain-forms {
   background-color: #fff;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin: 0 auto;
   border-radius: 10px;
@@ -62,14 +62,14 @@
   text-align: center;
 }
 
-.capitalgain-form h3 {
+.capitalgain-forms h3 {
   font-size: 18px;
   margin-bottom: 15px;
   color: #1b2e4b;
 }
 
-.capitalgain-form input,
-.capitalgain-form textarea {
+.capitalgain-forms input,
+.capitalgain-forms textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 12px;
@@ -78,11 +78,12 @@
   font-size: 14px;
 }
 
-.capitalgain-form textarea {
+.capitalgain-forms textarea {
   resize: none;
+  width: 90%;
 }
 
-.capitalgain-form button {
+.capitalgain-forms button {
   width: 100%;
   padding: 12px;
   background-color: #28a745;
@@ -95,7 +96,7 @@
   transition: background-color 0.3s ease;
 }
 
-.capitalgain-form button:hover {
+.capitalgain-forms button:hover {
   background-color: #218838;
 }
 
@@ -137,7 +138,7 @@
     text-align: left;
   }
 
-  .capitalgain-form {
+  .capitalgain-forms {
     width: 40%;
     margin: 0;
   }

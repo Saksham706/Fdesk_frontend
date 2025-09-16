@@ -93,7 +93,7 @@ const IncomeTaxCalculator = () => {
         ))}
       </aside>
 
-      <main className="form-card">
+      <main className="form-cards">
         {step === 1 && (
           <>
             <h3>About Yourself</h3>

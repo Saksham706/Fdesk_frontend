@@ -83,7 +83,7 @@ const HireCA = () => {
         </div>
 
         {/* Right Form */}
-        <div className="form-box">
+        <div className="form-boxs">
           <h3>ITR Details</h3>
           <input
             type="text"

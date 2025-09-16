@@ -165,7 +165,7 @@ const SalaryIncome = () => {
 
         {/* --- Buttons --- */}
         <div className="button-group">
-          <button onClick={addSalarySection} className="add-button">
+          <button onClick={addSalarySection} className="add-buttons">
             + Add Salary Income
           </button>
           <Link to="/ca-request">

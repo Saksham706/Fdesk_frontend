@@ -53,10 +53,8 @@ function Form16Upload({ onFileUpload }) {
   };
 
   return (
-    <div className="form16-page-wrapper">
+    <div className="form16-page-wrappers">
     <form onSubmit={handleSubmit} className="form16-upload-form" style={{ marginBottom: 20 }}>
-  {/* ...other parts unchanged... */}
-
   <fieldset>
     <legend>Employer Details</legend>
     <div className="input-row">

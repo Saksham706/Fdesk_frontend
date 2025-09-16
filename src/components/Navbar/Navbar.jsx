@@ -113,19 +113,6 @@ const Navbar = () => {
 
         <li><Link to='contact'>Contact</Link></li>
       </ul>
-
-      {/* Profile */}
-      <div className="navbar-profile hover-dropdown">
-        <button>
-          <span className="icon">👤</span>
-          <span className="tick">✔</span>
-        </button>
-        <div className="profile-dropdown">
-          <Link to="/home">My Dashboard</Link>
-          <Link to="/profile">My Profile</Link>
-          <button className="logout-btn" onClick={handleLogout}>Logout</button>
-        </div>
-      </div>
     </nav>
   );
 };

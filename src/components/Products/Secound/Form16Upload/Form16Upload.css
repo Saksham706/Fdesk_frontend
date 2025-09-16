@@ -2,36 +2,51 @@ body {
   background: #f5f6fa;
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .form16-page-wrapper {
   width: 100vw;
   min-height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f5f6fa;
+  box-sizing: border-box;
 }
 
 .form16-upload-form {
-  /* Card styling */
-  width: 100%;
-  max-width: 950px;      /* Or another max width as you prefer */
-  background: #f7f9fc;
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(32, 56, 117, 0.1);
   border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(32,56,117,0.06);
+  padding: 24px 32px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.form16-upload-form:hover {
+  box-shadow: 0 6px 28px rgba(32, 56, 117, 0.15);
 }
 
 fieldset {
   border: 1px solid #dbeafe;
-  border-radius: 8px;
-  margin-bottom: 32px;
-  padding: 18px 18px 12px 18px;
-  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 18px 20px 14px 20px;
+  background: #fefefe;
 }
 
 legend {
-  padding: 0 12px;
-  font-size: 1.15em;
+  padding: 0 10px;
+  font-size: 1.2em;
   color: #2563eb;
-  font-weight: 600;
+  font-weight: 700;
+  user-select: none;
+  margin-bottom: 12px;
 }
 
 .input-row {
@@ -43,18 +58,21 @@ legend {
 
 .input-row input {
   flex: 1 1 0;
-  min-width: 0;
+  min-width: 120px;
   padding: 10px 14px;
   font-size: 1rem;
   border: 1px solid #cbd5e1;
-  border-radius: 5px;
+  border-radius: 6px;
+  background: #f9fafb;
   box-sizing: border-box;
-  background: #f1f5fa;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
+
 .input-row input:focus {
-  border-color: #3b82f6;
   outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
 }
 
 fieldset input:not(.input-row input) {
@@ -63,19 +81,47 @@ fieldset input:not(.input-row input) {
   margin-bottom: 16px;
   font-size: 1rem;
   border: 1px solid #cbd5e1;
-  border-radius: 5px;
+  border-radius: 6px;
+  background: #f9fafb;
   box-sizing: border-box;
-  background: #f1f5fa;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Responsive: stack on smaller screens */
+fieldset input:not(.input-row input):focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+}
+
+button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #1e40af;
+  outline: none;
+}
+
 @media (max-width: 960px) {
   .form16-upload-form {
-    max-width: 98vw;
-    padding: 16px 8px 16px 8px;
+    padding: 20px 20px;
   }
   fieldset {
-    padding: 12px 8px 10px 8px;
+    padding: 14px 16px 12px 16px;
+  }
+  legend {
+    font-size: 1.1em;
   }
   .input-row {
     flex-direction: column;

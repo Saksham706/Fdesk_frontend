@@ -35,7 +35,7 @@ export default function Form12BB() {
       // STEP 1
       case 1:
         return (
-          <div className="form-card">
+          <div className="form-cards">
             <div className="form-row">
               <div className="form-group">
                 <label>Name *</label>

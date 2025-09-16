@@ -85,7 +85,7 @@ const Capitalgaintax1 = () => {
         </ul>
       </div>
 
-      <div className="capitalgain-form">
+      <div className="capitalgain-forms">
         <h3>Looking for Tax Help?</h3>
         <form onSubmit={handleSubmit}>
           <input

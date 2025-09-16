@@ -52,7 +52,7 @@ const Calculator80c1 = () => {
 
   return (
     <div className="calculator80c-main">
-      <div className="calculator80c-formbox">
+      <div className="calculator80c-formboxs">
         <h1>80c Calculator</h1>
         {/* First Row */}
         <div className="calc80c-row">

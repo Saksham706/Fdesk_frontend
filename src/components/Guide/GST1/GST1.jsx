@@ -70,7 +70,7 @@ const GST1 = () => {
         </div>
       </div>
 
-      <div className="gst-form-card">
+      <div className="gst-form-cards">
         <h3>Have queries?</h3>
         <form className="gst-form" onSubmit={handleSubmit}>
           <input

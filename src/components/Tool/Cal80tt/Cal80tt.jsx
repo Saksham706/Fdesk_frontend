@@ -28,7 +28,7 @@ const Cal80tt = () => {
         </p>
       </div>
 
-      <div className="form-card">
+      <div className="form-cards">
         <div className="form-group">
           <label>Financial Year</label>
           <select value={financialYear} onChange={(e) => setFinancialYear(e.target.value)}>
